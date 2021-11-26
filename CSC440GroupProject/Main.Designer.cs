@@ -1,5 +1,5 @@
 ﻿namespace CSC440GroupProject {
-    partial class Form1 {
+    partial class Main {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -81,6 +81,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "Delete Grades";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -90,6 +91,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "Print Report";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label2
             // 
@@ -103,7 +105,7 @@
             this.label2.Text = "Created By Donate, Trevor, and Caden";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,8 +118,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Main";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

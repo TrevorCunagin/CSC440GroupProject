@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CSC440GroupProject {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class Main : Form {
+        public Main() {
             InitializeComponent();
         }
 
@@ -37,6 +37,23 @@ namespace CSC440GroupProject {
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Delete deleteForm = new Delete();
+            deleteForm.Show();
+            
+            
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PrintReport reportForm = new PrintReport();
+            reportForm.Show();
         }
     }
 }
