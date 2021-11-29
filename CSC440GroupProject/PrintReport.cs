@@ -37,7 +37,9 @@ namespace CSC440GroupProject
             String ID;
             String classID;
             String grade;
-           
+            String inputID;
+            inputID = textBox1.Text;
+          
 
            
 
@@ -46,11 +48,11 @@ namespace CSC440GroupProject
 
                 Console.WriteLine("Connecting to MySQL...");
                 conn3.Open();
-                string sql = "SELECT ID, ClassID, Grade FROM dtk_grades";
+                string sql = "SELECT ID, ClassID, Grade FROM dtk_grades WHERE ID = @id";
 
 
                 MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn3);
-
+                cmd.Parameters.AddWithValue("@id", inputID);
 
 
 
@@ -61,10 +63,10 @@ namespace CSC440GroupProject
                     ID = myReader["ID"].ToString();
                     classID = myReader["ClassID"].ToString();
                     grade = myReader["Grade"].ToString();
-
+                    findClass(classID, grade);
                    
 
-                    var row = dataGridView1.Rows.Add(ID, classID, grade); //adds to datagridview
+                    
 
 
 
@@ -77,6 +79,59 @@ namespace CSC440GroupProject
                 Console.WriteLine(ex.ToString());
             }
             conn3.Close();
+            Console.WriteLine("Done.");
+        }
+
+        public void findClass(String classID, String grade)
+        {
+            
+            string connStr = "server=157.89.28.29;user=student;database=csc340_db;port=3306;password=Maroon@21?;";
+            MySql.Data.MySqlClient.MySqlConnection conn4 = new MySql.Data.MySqlClient.MySqlConnection(connStr);
+
+            String Teacher;
+            String Name;
+            String Prefix;
+            String Number;
+
+
+
+
+            try
+            {
+
+                Console.WriteLine("Connecting to MySQL...");
+                conn4.Open();
+                string sql = "SELECT Teacher, Name, Prefix, Number FROM dtk_classes WHERE ClassID = @classID";
+
+
+                MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn4);
+                cmd.Parameters.AddWithValue("@classID", classID);
+
+
+
+                MySqlDataReader myReader = cmd.ExecuteReader();
+                while (myReader.Read())
+                {
+
+                    Teacher = myReader["Teacher"].ToString();
+                    Name = myReader["Name"].ToString();
+                    Prefix = myReader["Prefix"].ToString();
+                    Number = myReader["Number"].ToString();
+
+
+                    var row = dataGridView1.Rows.Add(Teacher, Prefix, Number, Name, grade); //adds to datagridview
+
+
+
+
+                }
+                myReader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            conn4.Close();
             Console.WriteLine("Done.");
         }
 

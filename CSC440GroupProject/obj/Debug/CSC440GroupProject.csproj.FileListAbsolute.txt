@@ -58,3 +58,21 @@ C:\Users\trevor_cunagin1\Documents\GitHub\CSC440GroupProject\CSC440GroupProject\
 C:\Users\trevor_cunagin1\Documents\GitHub\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.Import.resources
 C:\Users\trevor_cunagin1\Documents\GitHub\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.csproj.ResolveComReference.cache
 >>>>>>> 3cd38febaa308fc38333e71eb752f2f482643bce
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\bin\Debug\Google.Protobuf.dll
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\bin\Debug\Zstandard.Net.dll
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\bin\Debug\Renci.SshNet.dll
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\bin\Debug\System.Buffers.dll
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\bin\Debug\System.Memory.dll
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\bin\Debug\MySql.Data.xml
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.exe.config
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.csproj.ResolveComReference.cache
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.Delete.resources
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.Import.resources
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.Main.resources
+C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.PrintReport.resources
