@@ -1,7 +1,0 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/.vs/CSC440GroupProject/v16/.suo
-/CSC440GroupProject/obj/Debug/CSC440GroupProject.Add.resources
-/CSC440GroupProject/obj

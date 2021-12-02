@@ -35,12 +35,6 @@ namespace CSC440GroupProject {
             Import importForm = new Import();
             importForm.Show();
         }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Add addForm = new Add();
-            addForm.Show();
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -53,7 +47,8 @@ namespace CSC440GroupProject {
             Delete deleteForm = new Delete();
             deleteForm.Show();
             
-       
+            
+
         }
 
         private void button5_Click(object sender, EventArgs e)
