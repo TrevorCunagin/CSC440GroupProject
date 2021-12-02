@@ -76,3 +76,5 @@ C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC4
 C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.Import.resources
 C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.Main.resources
 C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.PrintReport.resources
+C:\Users\donta\source\repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.Add.resources
+C:\Users\donta\source\repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.Edit.resources

@@ -21,6 +21,7 @@ namespace CSC440GroupProject
         private void button4_Click(object sender, EventArgs e)
         {
             populateDataGrid();
+            getStudentData();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -81,6 +82,62 @@ namespace CSC440GroupProject
             conn3.Close();
             Console.WriteLine("Done.");
         }
+
+        public void getStudentData()
+        {
+
+            dataGridView2.Rows.Clear();
+            string connStr = "server=157.89.28.29;user=student;database=csc340_db;port=3306;password=Maroon@21?;";
+            MySql.Data.MySqlClient.MySqlConnection conn5 = new MySql.Data.MySqlClient.MySqlConnection(connStr);
+
+            String fName;
+            String lName;
+            String GPA;
+            String inputID;
+            inputID = textBox1.Text;
+
+
+
+
+            try
+            {
+
+                Console.WriteLine("Connecting to MySQL...");
+                conn5.Open();
+                string sql = "SELECT firstName, lastName, GPA FROM dtk_student WHERE ID = @id";
+
+
+                MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn5);
+                cmd.Parameters.AddWithValue("@id", inputID);
+
+
+
+                MySqlDataReader myReader = cmd.ExecuteReader();
+                while (myReader.Read())
+                {
+
+                    fName = myReader["firstName"].ToString();
+                    lName = myReader["lastName"].ToString();
+                    GPA = myReader["GPA"].ToString();
+
+
+                    var row = dataGridView2.Rows.Add(fName, lName, GPA); //adds to datagridview2
+
+
+
+
+
+                }
+                myReader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            conn5.Close();
+            Console.WriteLine("Done.");
+        }
+
 
         public void findClass(String classID, String grade)
         {

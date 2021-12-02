@@ -71,7 +71,12 @@ namespace CSC440GroupProject
             Console.WriteLine("Done.");
         }
 
-
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Main mainForm = new Main();
+            mainForm.Show();
+        }
     }
 
 
