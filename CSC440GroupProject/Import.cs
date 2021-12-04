@@ -78,7 +78,7 @@ namespace CSC440GroupProject {
             string connStr = "server=157.89.28.29;user=student;database=csc340_db;port=3306;password=Maroon@21?;";
             MySql.Data.MySqlClient.MySqlConnection conn3 = new MySql.Data.MySqlClient.MySqlConnection(connStr);
             conn3.Open();
-            for (int rows = 0; rows < dataGridView1.Rows.Count; rows++) {
+            for (int rows = 0; rows < dataGridView1.Rows.Count-1; rows++) {
                 try {
                     string firstName = Convert.ToString(dataGridView1.Rows[rows].Cells[0].Value);
                     string lastName = Convert.ToString(dataGridView1.Rows[rows].Cells[1].Value);
