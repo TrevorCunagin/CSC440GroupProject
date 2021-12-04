@@ -78,3 +78,5 @@ C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC4
 C:\Users\donta\Source\Repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.PrintReport.resources
 C:\Users\donta\source\repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.Add.resources
 C:\Users\donta\source\repos\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.Edit.resources
+C:\Users\trevor_cunagin1\Documents\GitHub\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.Add.resources
+C:\Users\trevor_cunagin1\Documents\GitHub\CSC440GroupProject\CSC440GroupProject\obj\Debug\CSC440GroupProject.Edit.resources
